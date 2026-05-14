@@ -1,6 +1,7 @@
 [build]
+  base      = "ia-project-main"
   command   = "npm run build"
-  publish   = "build"
+  publish   = "ia-project-main/build"
 
 [build.environment]
   NODE_VERSION = "20"
