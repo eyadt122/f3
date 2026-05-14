@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp *)",
+      "PowerShell(claude mcp add netlify)",
+      "PowerShell(Get-Command claude -ErrorAction SilentlyContinue; where.exe claude 2>$null; Get-ChildItem \"$env:LOCALAPPDATA\\\\AnthropicClaude\" -Recurse -Filter \"claude.exe\" -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"$env:LOCALAPPDATA\" -Recurse -Filter \"claude.exe\" -ErrorAction SilentlyContinue | Select-Object FullName; Get-ChildItem \"$env:APPDATA\" -Recurse -Filter \"claude.exe\" -ErrorAction SilentlyContinue | Select-Object FullName; Get-ChildItem \"C:\\\\Program Files\" -Recurse -Filter \"claude.exe\" -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "PowerShell(npm list -g @anthropic-ai/claude-code 2>$null)",
+      "PowerShell(npx claude --version 2>$null)",
+      "PowerShell(Get-ChildItem \"$env:USERPROFILE\\\\.claude\" -ErrorAction SilentlyContinue; Get-ChildItem \"$env:APPDATA\\\\Claude\" -ErrorAction SilentlyContinue)",
+      "PowerShell(npm search netlify mcp --json 2>$null)",
+      "PowerShell(npm view netlify-mcp-server 2>&1)",
+      "PowerShell(npm view \"@netlify/mcp\" 2>&1)",
+      "Bash(Get-ChildItem -Path \"d:\\\\f3\" -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Format-Table -AutoSize)",
+      "Bash(npm run *)",
+      "Bash(npm install *)"
+    ]
+  }
+}
